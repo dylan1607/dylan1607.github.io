@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 100px 0;
+}
+
+//Navigation Bar styling
+#navbar {
+    position: fixed;
+    width: 100%;
+    padding: 2rem 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+    .max-width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1500px;
+        padding: 0 40px;
+        margin: auto;
+        .logo {
+            a {
+                color: #ffff ;
+                font-size: 4rem;
+                font-weight: 600;
+            }
+        }
+        .menu {
+            transition: all 0.3s ease;
+            li {
+                list-style: none;
+                display: inline-block;
+                
+                a {
+                    color: #ffff;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    margin: 0 10px;
+                    transition: color 0.3s;
+                }
+                a:hover {
+                    color: crimson;
+                }
+            }
+        }
+        // Menu button styling
+        .menu-btn {
+            color: #ffff;
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+        }
+    }
+}
+
+// Home Section Styling
+.home {
+    display: flex;
+    background: url("../image/landing.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+
+    .max-width {
+        margin: auto 0 auto 40px;
+        .home-content {
+            .text-1 {
+                font-size: 30px;
+            }
+            .text-2 {
+                font-size: 75px;
+                font-weight: 500;
+                margin-left: -3px;
+            }
+            .text-3 {
+                font-size: 40px;
+                margin: 5px 0;
+
+                span {
+                    font-weight: 500;
+                    color: crimson;
+                }
+            }
+            .cont {
+                a {
+                    display: inline-block;
+                    background: crimson;
+                    color: #ffff;
+                    font-size: 1.5rem;
+                    padding: 1.5rem 2.5rem;
+                    margin-top: 1.5rem;
+                    border-radius: 3rem;
+                    border: 2px solid crimson;
+                    transition: all 0.3s ease;
+                }
+                a:hover {
+                    color: #ffff;
+                    background: #1111; 
+                }
+
+            }
+        }
+    }
+}
+// About styling
+
+
+.about {
+    font-family: 'Poppins', sans-serif;
+    
+    .title {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+    }
+    //create line straight
+    .title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 300px;
+        height: 3px;
+        background: #111;
+        transform:  translateX(-50%);
+    }
+    .title::after {
+        content: "More Information";
+        position: absolute;
+        bottom: -13px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding: 5px;
+        background: #ffff;
+        transform:  translateX(-50%);
+    }
+    .max-width {
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .column {
+                width: 50%;
+            }
+            .left {
+                width: 45%;
+                img {
+                    height: 300px;
+                    width: 300px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    
+                }
+            }
+            .right {
+                width: 55%;
+                .text {
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                p {
+                    text-align: justify;
+                }
+                a {
+                    display: inline-block;
+                    background: crimson;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    padding: 1rem 2.5rem;
+                    margin-top: 1.5rem;
+                    border-radius: 3rem;
+                    border: 2px solid crimson;
+                    
+                }
+            }
+        }
+    }
+}
+
+// service section styling
+.services {
+    background: #111;
+    color: #ffff;
+    .title {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+    }
+    .title::before {
+        background: #fff;
+        content: "";
+        position: absolute;
+        bottom: 0px; 
+        left: 50%;
+        width: 300px;
+        height: 3px;
+        transform:  translateX(-50%);
+    }
+    
+    .title::after {
+        content: "What i provide";
+        position: absolute;
+        bottom: -13px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding: 5px;
+        background: #111;
+        transform:  translateX(-50%);
+    }
+
+    .serv-content {
+        display: flex;
+        justify-content: space-between;
+        .card {
+            //width: calc(33% - 20px);
+            width: 30%;
+            background: #222;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px 25px;
+            cursor: pointer;
+            transition: all 0.3 ease;
+            .box {
+                i {
+                    font-size: 50px;
+                    color: crimson;
+                }
+                .text {
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin: 10px 0 7px 0;
+                }
+            }
+            
+        }
+        .card:hover {
+            background: crimson;
+            i {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// Responsive media
+
+@media (max-width: 990px) {
+    #navbar {
+        .max-width {
+            padding: 0 30px;
+
+            .menu {
+                position: fixed;
+                height: 100vh;
+                width: 100%;
+                left: -100%; //hide navigation
+                top: 0;
+                background: #000;
+                text-align: center;
+                padding-top: 50px;
+                //display: none;
+                li {
+                    display: block;
+                    a {
+                        display: inline-block;
+                        margin: 15px 0;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .menu.active {
+                left: 0;
+            }
+            
+            .menu-btn {
+                display: block;
+                z-index: 1000;
+            }
+        }
+    }
+
+    .home {
+        .max-width {
+            margin: auto 0 auto 30px;
+            .home-content {
+                .text-1 {
+                    font-size: 2rem;
+                }
+                .text-2 {
+                    font-size: 4rem;
+                    font-weight: 500;
+                    margin-left: -3px;
+                }
+                .text-3 {
+                    font-size: 3rem;
+                    margin: 5px 0;
+    
+                    span {
+                        font-weight: 500;
+                        color: crimson;
+                    }
+                }
+            }
+            .cont {
+                a {
+                    font-size: 1rem;
+                    padding: 1rem 2rem;
+                }
+            }
+        }
+    }
+    .about {
+        .max-width {
+            max-width: 800px;
+            .about-content {
+                display: flex;
+                .column {
+                    width: 50%;
+                }
+                .left {
+                    display: flex;
+                    justify-content: center; 
+                    margin: 0 auto 60px;
+                    img {
+                        width: 300px;
+                        height: 300px ;
+                    }
+                }
+                .right {
+                    flex: 100%;
+                }
+            }
+        }
+    }
+}
