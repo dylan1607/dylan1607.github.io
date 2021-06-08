@@ -9,8 +9,41 @@ html {
     font-size: 62.5%;
 }
 
+// All similar content styling
 section {
+    font-family: 'poppins', sans-serif;
     padding: 100px 0;
+    .title {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+    }
+    //create line straight
+    .title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 300px;
+        height: 3px;
+        background: #111;
+        transform:  translateX(-50%);
+    }
+    .title::after {
+        content: "";
+        position: absolute;
+        bottom: -13px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding: 5px;
+        background: #ffff;
+        transform:  translateX(-50%);
+    }
 }
 
 //Navigation Bar styling
@@ -26,7 +59,7 @@ section {
         align-items: center;
         justify-content: space-between;
         max-width: 1500px;
-        padding: 0 40px;
+        padding: 0 50px;
         margin: auto;
         .logo {
             a {
@@ -75,7 +108,7 @@ section {
     font-family: 'Ubuntu', sans-serif;
 
     .max-width {
-        margin: auto 0 auto 40px;
+        margin: auto 0 auto 50px;
         .home-content {
             .text-1 {
                 font-size: 30px;
@@ -120,41 +153,11 @@ section {
 
 .about {
     font-family: 'Poppins', sans-serif;
-    .max-width {
-        padding: 20px;
-    }
-    .title {
-        position: relative;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 3.5rem;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: 50px;
-        padding-bottom: 20px;
-    }
-    //create line straight
-    .title::before {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        width: 300px;
-        height: 3px;
-        background: #111;
-        transform:  translateX(-50%);
-    }
     .title::after {
         content: "More Information";
-        position: absolute;
-        bottom: -13px;
-        left: 50%;
-        font-size: 20px;
-        color: crimson;
-        padding: 5px;
-        background: #ffff;
-        transform:  translateX(-50%);
     }
     .max-width {
+        padding: 20px 50px;
         .about-content {
             display: flex;
             align-items: center;
@@ -163,17 +166,18 @@ section {
                 width: 50%;
             }
             .left {
-                width: 45%;
+                display: flex;
+                margin: 0 auto 60px;
+                justify-content: center;
                 img {
                     height: 300px;
                     width: 300px;
                     object-fit: cover;
-                    border-radius: 20px;
-                    
+                    border-radius: 40px;
                 }
             }
             .right {
-                width: 55%;
+                flex: 100%;
                 .text {
                     font-size: 25px;
                     font-weight: 600;
@@ -202,71 +206,64 @@ section {
 .services {
     background: #111;
     color: #ffff;
-    .title {
-        position: relative;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 3.5rem;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: 50px;
-        padding-bottom: 20px;
-    }
-    .title::before {
-        background: #fff;
-        content: "";
-        position: absolute;
-        bottom: 0px; 
-        left: 50%;
-        width: 300px;
-        height: 3px;
-        transform:  translateX(-50%);
-    }
-    
-    .title::after {
-        content: "What i provide";
-        position: absolute;
-        bottom: -13px;
-        left: 50%;
-        font-size: 20px;
-        color: crimson;
-        padding: 5px;
-        background: #111;
-        transform:  translateX(-50%);
-    }
 
-    .serv-content {
-        display: flex;
-        justify-content: space-between;
-        .card {
-            //width: calc(33% - 20px);
-            width: 30%;
-            background: #222;
+    .max-width {
+        .title {
+            position: relative;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 500;
             text-align: center;
-            border-radius: 10px;
-            padding: 20px 25px;
-            cursor: pointer;
-            transition: all 0.3 ease;
-            .box {
-                i {
-                    font-size: 50px;
-                    color: crimson;
-                }
-                .text {
-                    font-size: 25px;
-                    font-weight: 500;
-                    margin: 10px 0 7px 0;
-                }
-            }
-            
+            margin-bottom: 50px;
+            padding-bottom: 20px;
         }
-        .card:hover {
-            background: crimson;
-            i {
-                color: #fff;
+        .title::before {
+            background: #fff;
+        }    
+        .title::after {
+            content: "What i provide";
+            color: crimson;
+            background: #111;
+        }
+        .serv-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto 50px;
+            .card {
+                width: calc(33% - 20px);
+                //width: 30%;
+                background: #222;
+                text-align: center;
+                border-radius: 10px;
+                padding: 20px 25px;
+                cursor: pointer;
+                transition: all 0.3 ease;
+                .box {
+                    i {
+                        font-size: 50px;
+                        color: crimson;
+                    }
+                    .text {
+                        font-size: 25px;
+                        font-weight: 500;
+                        margin: 10px 0 7px 0;
+                    }
+                }
+                
+            }
+            .card:hover {
+                background: crimson;
+                i {
+                    color: #fff;
+                }
             }
         }
     }
 }
+
+
 
 // Responsive media
 
@@ -336,26 +333,6 @@ section {
         }
     }
     .about {
-        .max-width {
-            max-width: 800px;
-            .about-content {
-                display: flex;
-                .column {
-                    width: 50%;
-                }
-                .left {
-                    display: flex;
-                    justify-content: center; 
-                    margin: 0 auto 60px;
-                    img {
-                        width: 300px;
-                        height: 300px ;
-                    }
-                }
-                .right {
-                    flex: 100%;
-                }
-            }
-        }
+        
     }
 }
