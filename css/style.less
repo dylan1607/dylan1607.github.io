@@ -6,13 +6,21 @@
     text-decoration: none;
 }
 html {
-    font-size: 62.5%;
+    font-size: 50%;
 }
 
 // All similar content styling
+.about .about-content,
+.services .serv-content,
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 section {
     font-family: 'poppins', sans-serif;
-    padding: 100px 0;
+    padding: 80px 50px;
     .title {
         position: relative;
         font-family: 'Ubuntu', sans-serif;
@@ -157,18 +165,12 @@ section {
         content: "More Information";
     }
     .max-width {
-        padding: 20px 50px;
         .about-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            
             .column {
                 width: 50%;
             }
             .left {
-                display: flex;
-                margin: 0 auto 60px;
-                justify-content: center;
                 img {
                     height: 300px;
                     width: 300px;
@@ -177,7 +179,6 @@ section {
                 }
             }
             .right {
-                flex: 100%;
                 .text {
                     font-size: 25px;
                     font-weight: 600;
@@ -226,14 +227,10 @@ section {
             background: #111;
         }
         .serv-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            margin: auto 50px;
+            
             .card {
-                width: calc(33% - 20px);
-                //width: 30%;
+                // height: calc(33% - 20px);
+                width: 30%;
                 background: #222;
                 text-align: center;
                 border-radius: 10px;
@@ -263,7 +260,19 @@ section {
     }
 }
 
-
+// Skill section styling
+.skills {
+    .max-width {
+        .title::after {
+            content: "What i know";
+        }
+        .skills-content {
+            .column {
+                width: calc(50%-30px);
+            }
+        }
+    }
+}
 
 // Responsive media
 
@@ -333,6 +342,13 @@ section {
         }
     }
     .about {
+        .max-width {
+            .about-content {
+                .column {
+                    width: 75%;
+                }
+            }
+        }
         
     }
 }
