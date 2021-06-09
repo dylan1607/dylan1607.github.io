@@ -49,7 +49,7 @@ section {
         font-size: 20px;
         color: crimson;
         padding: 5px;
-        background: #ffff;
+        background: #f9ebe0;
         transform:  translateX(-50%);
     }
 }
@@ -160,6 +160,7 @@ section {
 
 
 .about {
+    background-color: #f9ebe0;
     font-family: 'Poppins', sans-serif;
     .title::after {
         content: "More Information";
@@ -262,6 +263,7 @@ section {
 
 // Skill section styling
 .skills {
+    background-color: #f9ebe0;
     .max-width {
         .title::after {
             content: "What i know";
@@ -269,12 +271,27 @@ section {
         .skills-content {
             .column {
                 width: 50%;
+                padding: 0 50px;
             }
             .left {
                 .text {
                     font-size: 20px;
                     font-weight: 600;
                     margin-bottom: 10px;
+                }
+                a {
+                    display: inline-block;
+                    background: crimson;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    padding: 1rem 2.5rem;
+                    margin-top: 1.5rem;
+                    border-radius: 3rem;
+                    border: 2px solid crimson;
+                    
+                }
+                p {
+                    text-align: justify;
                 }
             }
             .right {
