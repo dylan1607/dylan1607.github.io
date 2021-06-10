@@ -10,9 +10,9 @@ html {
 }
 
 // All similar content styling
-.about .about-content,
-.services .serv-content,
-.skills .skills-content {
+@dark-color: #111;
+@light-color: #f9ebe0;
+.look {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -54,11 +54,13 @@ section {
     }
 }
 
+
+
 //Navigation Bar styling
 #navbar {
     position: fixed;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
     z-index: 999;
@@ -66,9 +68,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 1500px;
-        padding: 0 50px;
-        margin: auto;
+        padding: 0 30px;
         .logo {
             a {
                 color: #ffff ;
@@ -111,10 +111,10 @@ section {
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    color: #ffff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
-
+    color: #ffff;
+    background-color: @dark-color;
     .max-width {
         margin: auto 0 auto 50px;
         .home-content {
@@ -160,13 +160,15 @@ section {
 
 
 .about {
-    background-color: #f9ebe0;
+    .look();
+    background-color: @light-color;
     font-family: 'Poppins', sans-serif;
     .title::after {
         content: "More Information";
     }
     .max-width {
         .about-content {
+            .look();
             justify-content: center;
             .column {
                 width: 35%;
@@ -206,9 +208,9 @@ section {
 
 // service section styling
 .services {
-    background: #111;
     color: #ffff;
-
+    background-color: @dark-color;
+    .look();
     .max-width {
         .title::before {
             background: #fff;
@@ -219,6 +221,7 @@ section {
             background: #111;
         }
         .serv-content {
+            .look();
             justify-content: center;
             .card {
                 background: #222;
@@ -254,14 +257,14 @@ section {
 
 // Skill section styling
 .skills {
-    background-color: #f9ebe0;
+    background-color: @light-color;
+    .look();
     .max-width {
         .title::after {
             content: "What i know";
         }
         .skills-content {
-            display: flex;
-            justify-content: space-between;
+            .look();
             .column {
                 width: 50%;
             }
