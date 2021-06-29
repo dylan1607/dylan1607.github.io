@@ -11,7 +11,7 @@ html {
 
 // All similar content styling
 @dark-color: #111;
-@light-color: #f9ebe0;
+@light-color: #ffff;
 .look {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@ section {
         left: 50%;
         width: 250px;
         height: 3px;
-        background: #111;
+        background: @dark-color;
         transform:  translateX(-50%);
     }
     .title::after {
@@ -50,7 +50,7 @@ section {
         font-size: 20px;
         color: crimson;
         padding: 5px;
-        background: #f9ebe0;
+        background: @light-color;
         transform:  translateX(-50%);
     }
 }
