@@ -165,7 +165,7 @@ section {
     background-color: @light-color;
     font-family: 'Poppins', sans-serif;
     .title::after {
-        content: "More Information";
+        content: "Information";
     }
     .max-width {
         .about-content {
@@ -259,7 +259,6 @@ section {
 // Skill section styling
 .skills {
     background-color: @light-color;
-    .look();
     .max-width {
         .title::after {
             content: "What i know";
@@ -297,13 +296,29 @@ section {
                 .container {
                     background-color: rgb(112, 120, 220);
                     padding: 10px 25px;
-                    margin: 10px;
+                    margin: 5px;
                     width: 100px;
                     text-align: center;
                     border-radius: 10px;
                     color: #fff;
                 }
             }
+        }
+    }
+}
+
+// Exp section sytling
+.exp {
+    background-color: @dark-color;
+    color: #fff;
+    .max-width {
+        .title::before {
+            background: #fff;
+        }    
+        .title::after {
+            content: "What i do";
+            color: crimson;
+            background: #111;
         }
     }
 }
