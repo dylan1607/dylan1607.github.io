@@ -19,7 +19,7 @@ html {
     text-align: center;
     justify-content: center;
 }
-section {
+section, footer {
     font-family: 'poppins', sans-serif;
     padding: 50px 20px;
     .title {
@@ -306,11 +306,69 @@ section {
 }
 
 // Footer section sytling
-.footer {
+footer {
     background-color: @dark-color;
     color: #fff;
     .max-width {
-
+        .title::before {
+            background: #fff;
+        }
+        .title::after {
+            content: "If you interesting";
+            color: crimson;
+            background: #111;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            .column {
+                width: 50%;
+                padding: 0 50px;
+            }
+            .left {
+                .container {
+                    display: flex;
+                    padding: 10px 0;
+                    font-size: 15px;
+                    align-items: center;
+                    i {
+                        display: inline-block;
+                        background: #ffff;
+                        color: #111;
+                        padding: 0.9rem;
+                        font-size: 2rem;
+                        border-radius: 50%;
+                    }
+                    p {
+                        margin-left: 20px;
+                        a {
+                            color:#ffff
+                        }
+                    }
+                }
+            }
+            .right {
+                
+                .social {
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        list-style: none;
+                        padding: 10px 13px;
+                        background-color: rgb(39, 39, 39);
+                        margin: 5px;
+                        border-radius: 5px;
+                        a {
+                            color: #ffff;
+                            
+                            i {
+                                font-size: 2.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
