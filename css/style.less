@@ -7,6 +7,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 // All similar content styling
@@ -104,7 +105,28 @@ section, footer {
         }
     }
 }
-
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    position: auto;
+}
 // Home Section Styling
 .home {
     display: flex;
@@ -296,7 +318,7 @@ section, footer {
                     background-color: rgb(112, 120, 220);
                     padding: 10px 25px;
                     margin: 5px;
-                    width: 100px;
+                    width: 120px;
                     border-radius: 10px;
                     color: #fff;
                 }
