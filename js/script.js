@@ -1,11 +1,11 @@
 window.onscroll = () => {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("navbar").style.background = "#111";
-        document.getElementById("navbar").style.padding = "1.2rem 0";
+        document.getElementById("navbar").style.padding = "0.5rem 0";
     } 
     else {
         document.getElementById("navbar").style.background = "transparent";
-        document.getElementById("navbar").style.padding = "1.5rem 0";
+        document.getElementById("navbar").style.padding = "1rem 0";
     }
     if (document.body.scrollTop > 100) {
         $('.scroll-up-btn').addClass('show');
@@ -22,7 +22,7 @@ $('.menu-btn').click(() => {
 
 //slide up script
 $('.scroll-up-btn').click(() => {
-    $('html').animate({scrollTop:0});
+    $('html').scrollTop(0);
 });
 
 //typing animation scripts
