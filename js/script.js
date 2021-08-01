@@ -27,14 +27,14 @@ $('.scroll-up-btn').click(() => {
 
 //typing animation scripts
 var typed = new Typed(".typing-1", {
-    strings: ["Developer", "Designer", "Automation Engineer"],
+    strings: ["Developer", "Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
     smartBackspace: false
 })
 var typed = new Typed(".typing-2", {
-    strings: ["Developer", "Designer", "Automation Engineer"],
+    strings: ["Developer", "Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
