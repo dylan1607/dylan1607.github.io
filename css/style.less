@@ -102,9 +102,22 @@ section, footer {
             font-size: 30px;
             cursor: pointer;
             display: none;
+            transition: all 0.2s ease-out;
         }
     }
 }
+
+.backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0; //hide navigation
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    display: none;
+}
+
 .scroll-up-btn {
     position: fixed;
     height: 45px;
@@ -115,7 +128,7 @@ section, footer {
     text-align: center;
     line-height: 45px;
     color: #fff;
-    z-index: 9999;
+    z-index: 100;
     font-size: 30px;
     border-radius: 6px;
     cursor: pointer;
@@ -166,12 +179,12 @@ section, footer {
                     padding: 1.5rem 2.5rem;
                     margin-top: 1.5rem;
                     border-radius: 3rem;
-                    border: 2px solid crimson;
                     transition: all 0.3s ease;
                 }
                 a:hover {
                     color: #ffff;
-                    background: #1111; 
+                    background: #171717;
+                    transform: scale(1.1) ;
                 }
 
             }
@@ -229,7 +242,11 @@ section, footer {
                     margin-top: 1.5rem;
                     border-radius: 3rem;
                     border: 2px solid crimson;
-                    
+                    transition: all 0.2s ease-out;
+                }
+                a:hover {
+                    background: #171717;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -422,15 +439,17 @@ footer {
             padding: 0 30px;
 
             .menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 position: fixed;
                 height: 100vh;
-                width: 100%;
+                width: 80%;
                 left: -100%; //hide navigation
                 top: 0;
                 background: #000;
                 text-align: center;
-                padding-top: 50px;
-                //display: none;
+                transition: all 0.5s ease-out;
                 li {
                     display: block;
                     a {
@@ -450,7 +469,9 @@ footer {
             }
         }
     }
-
+    .backdrop.active  {
+        display: block;
+    }
     .home {
         .max-width {
             margin: auto 0 auto 30px;

@@ -16,9 +16,11 @@ window.onscroll = () => {
 }
 
 //toggle Navibar minisize
-$('.menu-btn').click(() => {
+$('.menu-btn, .backdrop').click(() => {
     $('.menu').toggleClass("active");
+    $('.backdrop').toggleClass('active');
 });
+
 
 //slide up script
 $('.scroll-up-btn').click(() => {
