@@ -23,7 +23,6 @@ html {
 }
 section, footer {
     font-family: 'poppins', sans-serif;
-    padding: 40px 20px;
     .title {
         position: relative;
         font-family: 'Ubuntu', sans-serif;
@@ -62,16 +61,16 @@ section, footer {
 //Navigation Bar styling
 #navbar {
     position: fixed;
+    top:0;
     width: 100%;
-    padding: 1.5rem 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    padding: 15px;
     z-index: 999;
     .max-width {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 30px;
         .logo {
             a {
                 color: #ffff ;
@@ -80,16 +79,17 @@ section, footer {
             }
         }
         .menu {
-            transition: all 0.3s ease-out;
+            display: flex;
             li {
                 list-style: none;
                 display: inline-block;
+                transition: all 0.3s ease-out;
                 
                 a {
                     color: #ffff;
                     font-size: 2rem;
                     font-weight: 500;
-                    margin: 0 10px;
+                    margin-left: 20px;
                     transition: color 0.2s ease-out;
                 }
                 a:hover {
@@ -120,47 +120,46 @@ section, footer {
 }
 
 .scroll-up-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    height: 45px;
-    width: 42px;
+    height: 50px;
+    width: 40px;
     background-color: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
+    right: 20px;
+    bottom: -50px;
     color: #fff;
     z-index: 100;
     font-size: 30px;
     border-radius: 6px;
     cursor: pointer;
-    opacity: 1;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 .scroll-up-btn.show {
-    bottom: 30px;
-    opacity: 1;
-    position: auto;
+    bottom: 15px;
 }
 // Home Section Styling
 .home {
-    display: flex;
     background: url("https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat center;
-    height: 100vh;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
     background-attachment:scroll;
     font-family: 'Ubuntu', sans-serif;
     color: #ffff;
     background-color: @dark-color;
     .max-width {
-        margin: auto 0 auto 50px;
+        margin: auto 15px;
         .home-content {
             .text-1 {
                 font-size: 30px;
             }
             .text-2 {
+                margin-left: -5px;
                 font-size: 75px;
                 font-weight: 500;
-                margin-left: -3px;
             }
             .text-3 {
                 font-size: 40px;
@@ -171,18 +170,20 @@ section, footer {
                     color: crimson;
                 }
             }
-            .cont {
-                a {
-                    display: inline-block;
-                    background: crimson;
-                    color: #ffff;
-                    font-size: 1.5rem;
-                    padding: 1.5rem 2.5rem;
-                    margin-top: 1.5rem;
-                    border-radius: 3rem;
-                    transition: all 0.3s ease;
+            .btn {
+                display: inline-block;
+                background: crimson;
+                color: #ffff;
+                font-size: 1.5rem;
+                padding: 1.5rem 2.5rem;
+                margin-top: 20px;
+                border-radius: 3rem;
+                transition: all 0.3s ease;
+                a   {
+                    text-decoration: none;
+                    color: inherit;
                 }
-                a:hover {
+                &:hover {
                     color: #ffff;
                     background: #171717;
                     transform: scale(1.1) ;
@@ -196,15 +197,12 @@ section, footer {
 
 
 .about {
-    .look();
     background-color: @light-color;
-    font-family: 'Poppins', sans-serif;
     .title::after {
         content: "Information";
     }
     .max-width {
-        display: flex;
-        flex-direction: column;
+        padding: 60px 0;
         .about-content {
             display: flex;
             justify-content: center;
@@ -215,16 +213,17 @@ section, footer {
             .left {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 padding: 10px 20px;
                 img {
-                    flex: 0.6;
                     height: 400px;
                     width: 100%;
-                    max-width: 300px;
+                    max-width: 280px;
                     border-radius: 40px;
                 }
             }
             .right {
+                padding: 0 30px;
                 .text {
                     font-size: 2rem;
                     font-weight: 600;
@@ -233,7 +232,6 @@ section, footer {
                 p {
                     font-size: 1.3rem;
                     text-align: left;
-                    padding: 0 50px;
                 }
                 a {
                     display: inline-block;
@@ -245,10 +243,11 @@ section, footer {
                     border-radius: 3rem;
                     border: 2px solid crimson;
                     transition: all 0.2s ease-out;
-                }
-                a:hover {
-                    background: #171717;
-                    transform: scale(1.1);
+
+                    &:hover {
+                        background: #171717;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -259,8 +258,8 @@ section, footer {
 .services {
     color: #ffff;
     background-color: @dark-color;
-    .look();
     .max-width {
+        padding: 60px 0;
         .title::before {
             background: #fff;
         }    
@@ -270,7 +269,7 @@ section, footer {
             background: #111;
         }
         .serv-content {
-            .look();
+            display: flex;
             justify-content: center;
             .card {
                 background: #222;
@@ -279,21 +278,18 @@ section, footer {
                 padding: 20px 25px;
                 margin: 20px;
                 cursor: pointer;
-                transition: all 0.3 ease;
                 width: 100%;
                 max-width: 500px;
-                .box {
-                    i {
-                        font-size: 50px;
-                        color: crimson;
-                    }
-                    .text {
-                        font-size: 25px;
-                        font-weight: 500;
-                        margin: 10px 0 7px 0;
-                    }
+                transition: all 0.3 ease;
+                i {
+                    font-size: 50px;
+                    color: crimson;
                 }
-                
+                .text {
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin: 10px 0;
+                }
             }
             .card:hover {
                 background: crimson;
@@ -309,25 +305,25 @@ section, footer {
 .skills {
     background-color: @light-color;
     .max-width {
+        padding: 60px 10px;
         .title::after {
             content: "What i know";
         }
         .skills-content {
-            .look();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             .column {
                 width: 50%;
             }
             .left {
-                .left__title {
-                    font-size: 20px;
-                    font-weight: 600;
-                }
                 a {
                     display: inline-block;
                     background: crimson;
                     color: #fff;
                     font-size: 1.5rem;
-                    padding: 1rem 2.5rem;
+                    padding: 1rem 1.5rem;
                     border-radius: 3rem;
                     border: 2px solid crimson;
                     
@@ -342,16 +338,20 @@ section, footer {
                 }
             }
             .right {
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 10px;
                 justify-content: center;
+                padding: 20px;
                 .container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     background-color: rgb(112, 120, 220);
-                    padding: 10px 25px;
-                    margin: 5px;
-                    width: 120px;
+                    padding: 15px 10px 15px 10px;
                     border-radius: 10px;
                     color: #fff;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -363,7 +363,11 @@ footer {
     background-color: @dark-color;
     color: #fff;
     .max-width {
-        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 10px;
         .footer__copyright {
             font-size: 1.5rem;
             text-align: center;
@@ -379,12 +383,11 @@ footer {
         .footer-content {
             display: flex;
             justify-content: center;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             .column {
                 width: 50%;
             }
             .left {
-                padding: 10px;
                 .container {
                     display: flex;
                     padding: 10px 0;
@@ -392,10 +395,9 @@ footer {
                     align-items: center;
                     text-align: center;
                     i {
-                        display: inline-block;
                         background: #ffff;
                         color: #111;
-                        padding: 0.9rem;
+                        padding: 1rem;
                         font-size: 2rem;
                         border-radius: 50%;
                     }
@@ -408,7 +410,6 @@ footer {
                 }
             }
             .right {
-                justify-content: center;
                 .social {
                     display: flex;
                     flex-wrap: wrap;
@@ -438,19 +439,17 @@ footer {
 @media (max-width: 990px) {
     #navbar {
         .max-width {
-            padding: 0 30px;
-
             .menu {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 position: fixed;
                 height: 100vh;
                 width: 80%;
                 left: -100%; //hide navigation
                 top: 0;
                 background: #000;
-                text-align: center;
                 transition: all 0.5s ease-out;
                 li {
                     display: block;
@@ -517,6 +516,40 @@ footer {
                         height: 100vh;
                     }
                 }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .services {
+        .max-width {
+            .serv-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .card {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .skills {
+        .max-width {
+            .skills-content {
+                .column {
+                    width: 45%;
+                }
+                .right {
+                    grid-template-columns: auto auto;
+                    .container {
+                        font-size: 1.2rem;
+                    }
+                }
             }
         }
     }
@@ -525,7 +558,7 @@ footer {
         .max-width {
             .footer-content {
                 .column {
-                    width: 100%;
+                    width: 60%;
                 }
                 .left {
                     .container {

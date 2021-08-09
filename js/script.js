@@ -1,13 +1,13 @@
 window.onscroll = () => {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("navbar").style.background = "#111";
-        document.getElementById("navbar").style.padding = "0.7rem 0";
+        document.getElementById("navbar").style.padding = "10px 15px";
     } 
     else {
         document.getElementById("navbar").style.background = "transparent";
-        document.getElementById("navbar").style.padding = "1.3rem 0";
+        document.getElementById("navbar").style.padding = "15px";
     }
-    if (document.body.scrollTop > 100) {
+    if (document.documentElement.scrollTop > 100) {
         $('.scroll-up-btn').addClass('show');
     }
     else {
