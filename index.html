@@ -1,248 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>Dylan's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="stylesheet/less" type="text/css" href="./css/style.less"">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/less@3.13" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar" id="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Portfo<span>lio.</span></a>
         </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </nav>
-    <div class="backdrop">
-
-    </div>
+    <div class="backdrop"></div>
 
     <!-- Home section -->
     <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, My name is</div>
-                <div class="text-2">Dylan Tran</div>
-                <div class="text-3">I'm a <span class="typing-1"></span></div>
-                <div class="btn"><a href="#contact">Contact Me</a></div>
-            </div>
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Hello, My name is</div>
+          <div class="text-2">Dylan Tran</div>
+          <div class="text-3">I'm a <span class="typing-1"></span></div>
+          <div class="btn"><a href="#contact">Contact Me</a></div>
         </div>
+      </div>
     </section>
-  
+
     <!-- About section -->
     <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About Me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="./image/IMG_7401.jpg" alt="" srcset="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm a <span class="typing-2"></span></div>
-                    <p>
-                        Hi I’m a Full Stack Web Developer I can make Full Stack Web Application for you with React and Node Restful APIs. I’ve completed many projects with 100% client’s satisfaction.
-                    </p>
-                    <a href="./image/Resume.pdf" target="_blank">Download Profile</a>
-                </div>
-            </div>
+      <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="./image/IMG_7401.jpg" alt="" srcset="" />
+          </div>
+          <div class="column right">
+            <div class="text">I'm a <span class="typing-2"></span></div>
+            <p>
+              Hi I’m a Full Stack Web Developer I can make Full Stack Web
+              Application for you with React and Node Restful APIs. I’ve
+              completed many projects with 100% client’s satisfaction.
+            </p>
+            <a href="./image/Resume.pdf" target="_blank">Download Profile</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Service -->
     <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My services</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <i class="fas fa-paint-brush"></i>
-                    <div class="text">Web Design</div>
-                    <p>Responsive for designing and building the interface, navigation of website for businesses and clients</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-chart-line"></i>
-                    <div class="text">Advertising</div>
-                    <p>Create a page of marketing and advertising to deliver promotional marketing messages to consumers</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-code"></i>
-                    <div class="text">App Design</div>
-                    <p>Involves gather and analyze the customer business function then designing an application solution to meet the prioritized business requirements</p>
-                </div>
-            </div>
+      <div class="max-width">
+        <h2 class="title">My services</h2>
+        <div class="serv-content">
+          <div class="card">
+            <i class="fas fa-paint-brush"></i>
+            <div class="text">Web Design</div>
+            <p>
+              Responsive for designing and building the interface, navigation of
+              website for businesses and clients
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <div class="text">Advertising</div>
+            <p>
+              Create a page of marketing and advertising to deliver promotional
+              marketing messages to consumers
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <div class="text">App Design</div>
+            <p>
+              Involves gather and analyze the customer business function then
+              designing an application solution to meet the prioritized business
+              requirements
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skill -->
     <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My Skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="left__content">
-                        <h3>- Front-end -</h3>
-                        <ul>
-                            <li>ReactJS</li>
-                            <li>Redux</li>
-                            <li>React-Native</li>
-                        </ul>
-                        <h3>- Back-end -</h3>
-                        <ul>
-                            <li>NodeJS</li>
-                            <li>ExpressJS</li>
-                            <li>MongooseDB</li>
-                        </ul>
-
-                    </div>
-                    <a href="# ">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="container">
-                        <span>HTML/CSS</span>
-                    </div>
-                    <div class="container">
-                        <span>Javascript</span>
-                    </div>
-                    <div class="container">
-                        <span>C# .NET</span>
-                    </div>
-                    <div class="container">
-                        <span>ReactJS</span>
-                    </div>
-                    <div class="container">
-                        <span>Python</span>
-                    </div>
-                    <div class="container">
-                        <span>Github</span>
-                    </div>
-                    <div class="container">
-                        <span>Microsoft SQL</span>
-                    </div>
-                    <div class="container">
-                        <span>Embedded Systems</span>
-                    </div>
-                    <div class="container">
-                        <span>Automatic Component</span>
-                    </div>
-                </div>
+      <div class="max-width">
+        <h2 class="title">My Skills</h2>
+        <div class="skills-content">
+          <div class="column left">
+            <div class="left__content">
+              <h3>- Front-end -</h3>
+              <ul>
+                <li>ReactJS</li>
+                <li>Redux</li>
+                <li>React-Native</li>
+              </ul>
+              <h3>- Back-end -</h3>
+              <ul>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>MongooseDB</li>
+              </ul>
             </div>
+            <a href="# ">Read more</a>
+          </div>
+          <div class="column right">
+            <div class="container">
+              <span>HTML/CSS</span>
+            </div>
+            <div class="container">
+              <span>Javascript</span>
+            </div>
+            <div class="container">
+              <span>C# .NET</span>
+            </div>
+            <div class="container">
+              <span>ReactJS</span>
+            </div>
+            <div class="container">
+              <span>Python</span>
+            </div>
+            <div class="container">
+              <span>Github</span>
+            </div>
+            <div class="container">
+              <span>Microsoft SQL</span>
+            </div>
+            <div class="container">
+              <span>Embedded Systems</span>
+            </div>
+            <div class="container">
+              <span>Automatic Component</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-<section>
-    <div class="bg-black text-center text-white py-20 px-6">
+    <section>
+      <div class="bg-black text-center text-white py-20 px-6">
         <h2 class="text-4xl font-semibold py-10">CHECK OUT SOME OF MY WORK</h2>
-        <div class="flex flex-col items-center space-y-5 ">
+        <div class="flex flex-col items-center space-y-5">
+          <div
+            class="
+              flex flex-col
+              items-center
+              p-10
+              border border-red-600
+              rounded-xl
+              text-center
+              space-y-4
+              max-w-6xl
+            "
+          >
+            <h2 class="text-3xl font-semibold">ECOMERCE - MERN Stack</h2>
+            <img
+              src="https://user-images.githubusercontent.com/67869620/127843955-b3fd9652-f57e-4c2a-bbfe-d373e5555ea0.png"
+              alt=""
+              height="100"
+            />
+            <ul class="text-2xl">
+              <li>Frontend : ReactJs, Redux, Redux-Thunk</li>
+              <li>Backend : NodeJs, RESTful API, JWT, MongoDB</li>
+            </ul>
+          </div>
 
-            <div class="flex flex-col items-center p-10 border border-red-600 
-                rounded-xl text-center space-y-4 max-w-6xl">
-                <h2 class="text-3xl font-semibold">ECOMERCE - MERN Stack</h2>
-                <img src="https://user-images.githubusercontent.com/67869620/127843955-b3fd9652-f57e-4c2a-bbfe-d373e5555ea0.png" alt=""
-                 height="100">
-                <ul class="text-2xl">
-                    <li>Frontend : ReactJs, Redux, Redux-Thunk</li>
-                    <li>Backend : NodeJs, RESTful API, JWT, MongoDB</li>
-                </ul>
-            </div>
+          <div
+            class="
+              flex flex-col
+              items-center
+              p-10
+              border border-red-600
+              rounded-xl
+              text-center
+              space-y-4
+              max-w-6xl
+            "
+          >
+            <h2 class="text-3xl font-semibold">THE MOVIE WEBSITE</h2>
+            <img
+              src="https://user-images.githubusercontent.com/67869620/132158578-5feade51-19db-42fa-8fa4-c7f7df4d510e.png"
+              alt=""
+              height="100"
+            />
+            <ul class="text-2xl">
+              <li>Frontend : NextJs, Express, TailwindCSS</li>
+              <li>Deloy on Vercel</li>
+              <li class="text-blue-500 underline">
+                <a
+                  href="https://hulu-clone-chi-ecru.vercel.app/"
+                  target="_blank"
+                  >Link Demo</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div class="flex flex-col items-center p-10 border border-red-600 
-                rounded-xl text-center space-y-4 max-w-6xl">
-                <h2 class="text-3xl font-semibold">THE MOVIE WEBSITE</h2>
-                <img src="https://user-images.githubusercontent.com/67869620/132158578-5feade51-19db-42fa-8fa4-c7f7df4d510e.png" alt=""
-                 height="100">
-                <ul class="text-2xl">
-                    <li>Frontend : NextJs, Express, TailwindCSS</li>
-                    <li>Deloy on Vercel</li>
-                    <li class="text-blue-500 underline"><a href="https://hulu-clone-chi-ecru.vercel.app/" target="_blank">Link Demo</a></li>
-                </ul>
-            </div>
+          <div
+            class="
+              flex flex-col
+              items-center
+              p-10
+              border border-red-600
+              rounded-xl
+              text-center
+              space-y-4
+              max-w-6xl
+            "
+          >
+            <h2 class="text-3xl font-semibold">ADMIN DASHBOARD</h2>
+            <img
+              src="https://user-images.githubusercontent.com/67869620/130096194-6eb7b667-8117-4d8a-8d1b-323cfeceaede.png"
+              alt=""
+              height="100"
+            />
+            <ul class="text-2xl">
+              <li>Frontend : ReactJs, SASS, Rechart, Material-UI</li>
+              <li>Deloy on Vercel</li>
+              <li class="text-blue-500 underline">
+                <a
+                  href="https://admin-dashboard-mocha.vercel.app/"
+                  target="_blank"
+                  >Link Demo</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div class="flex flex-col items-center p-10 border border-red-600 
-                rounded-xl text-center space-y-4 max-w-6xl">
-                <h2 class="text-3xl font-semibold">ADMIN DASHBOARD</h2>
-                <img src="https://user-images.githubusercontent.com/67869620/130096194-6eb7b667-8117-4d8a-8d1b-323cfeceaede.png" alt=""
-                 height="100">
-                <ul class="text-2xl">
-                    <li>Frontend : ReactJs, SASS, Rechart, Material-UI</li>
-                    <li>Deloy on Vercel</li>
-                    <li class="text-blue-500 underline"><a href="https://admin-dashboard-mocha.vercel.app/" target="_blank">Link Demo</a></li>
-                </ul>
-            </div>
-
-            <div class="flex flex-col items-center p-10 border border-red-600 
-                rounded-xl text-center space-y-4 max-w-6xl">
-                <h2 class="text-3xl font-semibold">Taxi Mobile</h2>
-                <div class="flex">
-                    <img src="https://user-images.githubusercontent.com/67869620/129750664-ec49dff1-71e7-4f47-83d2-e25bdba3f4d4.png" alt=""
-                    height="100">
-                </div>
-                <ul class="text-2xl">
-                    <li>Library : React-Native, Redux Toolkit, TailwindCSS</li>
-                    <li>Google Cloud APIs : Map, Direction, Matrix</li>
-                    <li>Framework : Expo</li>
-                    <li class="text-blue-500 underline"><a href="https://github.com/dylan1607/uber-clone" target="_blank">Link Source</a></li>
-                </ul>
-            </div>
+          <div
+            class="
+              flex flex-col
+              items-center
+              p-10
+              border border-red-600
+              rounded-xl
+              text-center
+              space-y-4
+              max-w-6xl
+            "
+          >
+            <h2 class="text-3xl font-semibold">Taxi Mobile</h2>
+            <img
+              src="https://user-images.githubusercontent.com/67869620/129750375-e747cf39-2719-4a69-bfde-bdab90d906d9.png"
+              alt=""
+              <ul
+              class="text-2xl"
+            />
+            <img
+              src="https://user-images.githubusercontent.com/67869620/129750664-ec49dff1-71e7-4f47-83d2-e25bdba3f4d4.png"
+              alt=""
+              <ul
+              class="text-2xl"
+            />
+            <li class="text-2xl">
+              Library : React-Native, Redux Toolkit, TailwindCSS
+            </li>
+            <li class="text-2xl">Google Cloud APIs : Map, Direction, Matrix</li>
+            <li class="text-2xl">Framework : Expo</li>
+            <li class="text-blue-500 underline text-2xl">
+              <a href="https://github.com/dylan1607/uber-clone" target="_blank"
+                >Link Source</a
+              >
+            </li>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact</h2>
-            <div class="footer-content">
-                <div class="column left">
-                    <div class="container">
-                        <i class="fas fa-location-arrow"></i>
-                        <p><address>Thu Duc City</address></p>
-                    </div>
-                    <div class="container">
-                        <i class="fas fa-phone"></i>
-                        <p><a href="tel:+84868847472">+84 868 847472</a></p>
-                    </div>
-                    <div class="container">
-                        <i class="fas fa-envelope"></i>
-                        <p><a href="mailto:tranvunguyen1607@gmail.com">tranvunguyen1607@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="column right">
-                    <ul class="social">
-                        <li>
-                            <a href="https://www.facebook.com/kid.bab.boy"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.github.com/dylan1607"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                </div>
+      <div class="max-width">
+        <h2 class="title">Contact</h2>
+        <div class="footer-content">
+          <div class="column left">
+            <div class="container">
+              <i class="fas fa-location-arrow"></i>
+              <address>Thu Duc City</address>
             </div>
-            <div class='footer__copyright'>Created By Dylan | <span class="far fa-copyright"></span>2021 All rights reserved.</div>
+            <div class="container">
+              <i class="fas fa-phone"></i>
+              <p><a href="tel:+84868847472">+84 868 847472</a></p>
+            </div>
+            <div class="container">
+              <i class="fas fa-envelope"></i>
+              <p>
+                <a href="mailto:tranvunguyen1607@gmail.com"
+                  >tranvunguyen1607@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="column right">
+            <ul class="social">
+              <li>
+                <a href="https://www.facebook.com/kid.bab.boy"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.github.com/dylan1607"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer__copyright">
+          Created By Dylan | <span class="far fa-copyright"></span>2021 All
+          rights reserved.
+        </div>
+      </div>
     </footer>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
