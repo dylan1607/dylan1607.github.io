@@ -57,7 +57,7 @@
     </section>
 
     <!-- About section -->
-    <section class="about" id="about">
+    <section class="about pt-10" id="about">
       <div class="max-width">
         <h2 class="title">About Me</h2>
         <div class="about-content">
@@ -78,7 +78,7 @@
     </section>
 
     <!-- Service -->
-    <section class="services" id="services">
+    <section class="services pt-10" id="services">
       <div class="max-width">
         <h2 class="title">My services</h2>
         <div class="serv-content">
@@ -112,26 +112,31 @@
     </section>
 
     <!-- Skill -->
-    <section class="skills" id="skills">
+    <section class="skills pt-10" id="skills">
       <div class="max-width">
         <h2 class="title">My Skills</h2>
         <div class="skills-content">
           <div class="column left">
             <div class="left__content">
-              <h3>- Front-end -</h3>
+              <h3 class="uppercase bg-black text-white rounded-lg mt-4">Frontend</h3>
               <ul>
                 <li>ReactJS</li>
                 <li>Redux</li>
-                <li>React-Native</li>
+                <li>Flutter</li>
               </ul>
-              <h3>- Back-end -</h3>
+              <h3 class="uppercase bg-black text-white rounded-lg mt-4">Backend</h3>
               <ul>
                 <li>NodeJS</li>
-                <li>ExpressJS</li>
-                <li>MongooseDB</li>
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+              <h3 class="uppercase bg-black text-white rounded-lg mt-4">DevOps</h3>
+              <ul>
+                <li>Azure CI/CD</li>
+                <li>Docker</li>
               </ul>
             </div>
-            <a href="# ">Read more</a>
+            <a href="#">Read more</a>
           </div>
           <div class="column right">
             <div class="container">
@@ -141,37 +146,29 @@
               <span>Javascript</span>
             </div>
             <div class="container">
-              <span>C# .NET</span>
-            </div>
-            <div class="container">
               <span>ReactJS</span>
             </div>
             <div class="container">
               <span>Python</span>
             </div>
             <div class="container">
+              <span>Docker</span>
+            </div>
+            <div class="container">
               <span>Github</span>
-            </div>
-            <div class="container">
-              <span>Microsoft SQL</span>
-            </div>
-            <div class="container">
-              <span>Embedded Systems</span>
-            </div>
-            <div class="container">
-              <span>Automatic Component</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!--Project Section -->
     <section>
       <div class="bg-black text-center text-white py-20 px-6">
-        <h2 class="text-4xl font-semibold py-10">CHECK OUT SOME OF MY WORK</h2>
+        <h2 class="text-4xl font-semibold py-10 uppercase">Check out some of my projects</h2>
         <div class="flex flex-col items-center space-y-5">
           <div
-            class="
+                  class="
               flex flex-col
               items-center
               p-10
@@ -182,24 +179,58 @@
               max-w-6xl
             "
           >
-          <h2 class="text-3xl font-semibold">CHAT REALTIME</h2>
+            <h2 class="text-3xl font-semibold">THE MOVIE WEBSITE</h2>
             <img
-              src="https://user-images.githubusercontent.com/67869620/132953089-ecdf6664-288d-4b1c-919b-588a33bedc32.png"
-              alt=""
-              height="100"
+                    src="https://user-images.githubusercontent.com/67869620/132158578-5feade51-19db-42fa-8fa4-c7f7df4d510e.png"
+                    alt=""
+                    height="100"
             />
             <ul class="text-2xl">
-              <li>Frontend : ReactJs, Redux-toolkit, Styled-Components</li>
-              <li>AWS Backend : Amazon Amplify, Amazon DynamoDB-GraphQL, Amazon Cognito </li>
-              <li>Future Option: Amazon S3 for uploading</li>
+              <li>Frontend : NextJs, TailwindCSS, Themoviedb</li>
+              <li>Deloy on Vercel</li>
               <li class="text-blue-500 underline">
-                <a href="https://main.d2f6i125qk1e37.amplifyapp.com/" target="_blank">Demo</a>
+                <a
+                        href="https://hulu-clone-chi-ecru.vercel.app/"
+                        target="_blank"
+                >Link Demo</a
+                >
               </li>
             </ul>
           </div>
 
           <div
-            class="
+                  class="
+              flex flex-col
+              items-center
+              p-10
+              border border-red-600
+              rounded-xl
+              text-center
+              space-y-4
+              max-w-6xl
+            "
+          >
+            <h2 class="text-3xl font-semibold">Uber Blockchain</h2>
+            <img
+                    src="https://user-images.githubusercontent.com/67869620/197337583-7070fd2c-b14a-463a-b2e9-ab7227e1868a.png"
+                    alt=""
+                    height="100"
+            />
+            <ul class="text-2xl">
+              <li>NextJs, TailwindCSS, Mapbox, StrapiCMS, MetaMask</li>
+              <li>Deloy on Vercel</li>
+              <li class="text-blue-500 underline">
+                <a
+                        href="https://uber-blockchain-jet.vercel.app"
+                        target="_blank"
+                >Link Demo</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+                  class="
               flex flex-col
               items-center
               p-10
@@ -213,18 +244,25 @@
 
             <h2 class="text-3xl font-semibold">ECOMERCE - MERN Stack</h2>
             <img
-              src="https://user-images.githubusercontent.com/67869620/127843955-b3fd9652-f57e-4c2a-bbfe-d373e5555ea0.png"
-              alt=""
-              height="100"
+                    src="https://user-images.githubusercontent.com/67869620/127843955-b3fd9652-f57e-4c2a-bbfe-d373e5555ea0.png"
+                    alt=""
+                    height="100"
             />
             <ul class="text-2xl">
               <li>Frontend : ReactJs, Redux, Redux-Thunk</li>
               <li>Backend : NodeJs, RESTful API, JWT, MongoDB</li>
+              <li class="text-blue-500 underline">
+                <a
+                        href="https://github.com/dylan1607/ecommerce-mern"
+                        target="_blank"
+                >Link Source</a
+                >
+              </li>
             </ul>
           </div>
 
           <div
-            class="
+                  class="
               flex flex-col
               items-center
               p-10
@@ -235,20 +273,19 @@
               max-w-6xl
             "
           >
-            <h2 class="text-3xl font-semibold">THE MOVIE WEBSITE</h2>
+            <h2 class="text-3xl font-semibold">Tinder Clone</h2>
             <img
-              src="https://user-images.githubusercontent.com/67869620/132158578-5feade51-19db-42fa-8fa4-c7f7df4d510e.png"
-              alt=""
-              height="100"
+                    src="https://raw.githubusercontent.com/dylan1607/tinder-flutter/master/3.png"
+                    alt=""
+                    height="100"
             />
             <ul class="text-2xl">
-              <li>Frontend : NextJs, Express, TailwindCSS</li>
-              <li>Deloy on Vercel</li>
+              <li>Flutter</li>
               <li class="text-blue-500 underline">
                 <a
-                  href="https://hulu-clone-chi-ecru.vercel.app/"
-                  target="_blank"
-                  >Link Demo</a
+                        href="https://github.com/dylan1607/tinder-flutter"
+                        target="_blank"
+                >Link Source</a
                 >
               </li>
             </ul>
